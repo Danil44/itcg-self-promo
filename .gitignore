@@ -17,7 +17,7 @@ db.*
 .idea/
 *css.map
 .sass-cache/
-node_modules
+node_modules/
 local_settings.py
 
 *.sublime-project
