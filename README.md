@@ -1,1 +1,0 @@
-# itcg-self-promo

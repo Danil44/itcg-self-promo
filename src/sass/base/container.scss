@@ -1,15 +1,10 @@
 .container {
-  padding: 0 0.8em;
+  padding: 0 6px;
 
   @media (min-width: $lg-width) {
-    padding: 0 1em;
-  }
-
-  @media(min-width: $lg-desktop-breakpoint) {
-    width: 1380px;
+    width: 950px;
     margin-right: auto;
     margin-left: auto;
     padding: 0;
   }
-
 }

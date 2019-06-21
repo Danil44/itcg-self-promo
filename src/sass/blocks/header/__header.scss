@@ -1,0 +1,24 @@
+.page__header {
+    background-image: url('/static/images/blue-bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 107vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2.5em;
+
+    .man {
+        margin-bottom: 4em;
+    }
+
+    .flashlight {
+        width: 45%;
+        right: 50%;
+        bottom: 0;
+        position: absolute;
+    }
+}

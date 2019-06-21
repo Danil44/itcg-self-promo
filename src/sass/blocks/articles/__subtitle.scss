@@ -1,9 +1,0 @@
-.articles__subtitle {
-  @include text($font-size: $subtitle-font-size, $font-weight: $subtitle-font-weigth);
-  text-align: center;
-  line-height: 30px;
-
-  @media(min-width: $desktop-breakpoint) {
-    font-size: calc(15px + 0.5vw)
-  }
-}

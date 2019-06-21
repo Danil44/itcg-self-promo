@@ -15,15 +15,13 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.conf import settings
 from django.contrib import admin
+from django.views.generic import TemplateView
 
 urlpatterns = [
-    url(r'^', include('content.urls', namespace='content')),
-    url(r'^auditing/', include('auditing.urls', namespace='auditing')),
+    url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]
 
 if settings.DEBUG:
     from django.conf.urls.static import static
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

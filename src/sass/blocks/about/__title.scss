@@ -1,1 +1,7 @@
-
+.about__title {
+  text-align: center;
+  @include text($font-size: 48px, $font-weight: 700);
+  background: $primary-text-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

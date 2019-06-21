@@ -63,7 +63,7 @@ gulp.task("scripts", () => {
       webpackStream(webpackConfig),
       webpack
     )
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("./static/js"));
 });

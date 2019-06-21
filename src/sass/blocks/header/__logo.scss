@@ -1,13 +1,9 @@
 .header__logo {
-  width: 42%;
+margin-right: auto;
+margin-left: auto;
+width: 50%;
 }
 
-.logo-icon {
-  position: absolute;
-  width: 34px;
-  height: 34px;
-  right: 16%;
-  top: 19%;
+.logo-wrapper {
+    position: relative;
 }
-
-

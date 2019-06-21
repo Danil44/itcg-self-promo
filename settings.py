@@ -61,14 +61,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # third apps
-    'adminsortable2',
-    'ckeditor',
-    'ckeditor_uploader',
-    'file_resubmit',
-    # local apps
-    'content.apps.ContentConfig',
-    'auditing.apps.AuditingConfig',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -108,20 +100,20 @@ WSGI_APPLICATION = 'self_promo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        # Or path to database file if using sqlite3.
-        'NAME': 'self_promo',
-        'USER': 'www',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
-        # Set to empty string for localhost. Not used with sqlite3.
-        'HOST': '127.0.0.1',
-        # Set to empty string for default. Not used with sqlite3.
-        'PORT': '',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         # Or path to database file if using sqlite3.
+#         'NAME': 'self_promo',
+#         'USER': 'www',                      # Not used with sqlite3.
+#         'PASSWORD': '',                  # Not used with sqlite3.
+#         # Set to empty string for localhost. Not used with sqlite3.
+#         'HOST': '127.0.0.1',
+#         # Set to empty string for default. Not used with sqlite3.
+#         'PORT': '',
+#     }
+# }
 
 
 # Internationalization
@@ -131,7 +123,7 @@ LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'Europe/Kiev'
 
-USE_I18N = True
+USE_I18N = False
 
 USE_L10N = False
 
@@ -146,12 +138,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, '../static_content/', 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, PROJECT_NAME, "static"),
 ]
-
-
-# Media
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, PROJECT_NAME, 'media')
 
 
 # Email
@@ -269,51 +255,6 @@ LOGGING = {
         #     'handlers': ['console', ],
         # }
     }
-}
-
-
-# CKEDITOR
-
-CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': [
-            ['Undo', 'Redo',
-             '-', 'Bold', 'Italic', 'Underline',
-             '-', 'Link', 'Unlink', 'Anchor',
-             '-', 'Format',
-             '-', 'Maximize',
-             '-', 'Table',
-             '-', 'Image',
-             '-', 'Source',
-             '-', 'NumberedList', 'BulletedList'
-             ],
-            ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock',
-             '-', 'Font', 'FontSize', 'TextColor',
-             '-', 'Outdent', 'Indent',
-             '-', 'HorizontalRule',
-             '-', 'Blockquote'
-             ]
-        ],
-        'height': 500,
-        'width': '100%',
-        'toolbarCanCollapse': False,
-        'forcePasteAsPlainText': True
-    }
-}
-
-CKEDITOR_UPLOAD_PATH = "ckeditor/"
-
-
-# Cache
-
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
-    },
-    "file_resubmit": {
-        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-        "LOCATION": '/tmp/file_resubmit/'
-    },
 }
 
 

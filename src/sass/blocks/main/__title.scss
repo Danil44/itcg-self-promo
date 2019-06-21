@@ -1,28 +1,10 @@
 .main__title {
-  text-align: center;
-  @include text($font-size: $title-font-size, $font-weight: 700);
-  background: $primary-title-color;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   &::after {
     content: "";
     display: block;
-    margin: 0.5em auto 0.6em auto;
-    width: 270px;
+    margin: 0.5em auto 1em auto;
+    width: 6em;
     height: 1px;
     background-color: $light-grey-color;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    text-align: left;
-
-    &::after {
-      border-radius: 10px;
-      width: 65px;
-      height: 8px;
-      background: $primary-title-color;
-      margin: 0.5em auto 0 0;
-    }
   }
 }

@@ -1,9 +1,0 @@
-.main__text {
-  @include text($font-size: $text-font-size);
-  text-align: center;
-  line-height: 28px;
-
-  @media (min-width: $desktop-breakpoint) {
-    font-size: $desktop-text-font-size;
-  }
-}
