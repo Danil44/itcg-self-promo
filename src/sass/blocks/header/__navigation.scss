@@ -1,0 +1,20 @@
+.header__navigation {
+  display: none;
+  width: 600px;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    margin: 1.5em 0 3em;
+  }
+  @media (min-width: $lg-desktop-breakpoint) {
+    width: 680px;
+  }
+
+  @media (min-width: $xl-desktop-breakpoint) {
+    width: 735px;
+    margin: 3em 0 6em;
+  }
+}

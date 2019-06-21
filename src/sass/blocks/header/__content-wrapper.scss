@@ -1,0 +1,13 @@
+.header__content-wrapper {
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0 4% 0 auto;
+  }
+
+  @media (min-width: $lg-desktop-breakpoint) {
+    margin: 0 10% 0 auto;
+  }
+
+  @media (min-width: $xl-desktop-breakpoint) {
+    margin: 0 16% 0 auto;
+  }
+}

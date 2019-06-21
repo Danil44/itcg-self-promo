@@ -1,0 +1,35 @@
+.cases__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  padding: 0 1em;
+  top: 55%;
+  left: 0;
+  z-index: 1;
+
+  &:focus {
+    outline: none;
+  }
+
+  .right-arrow {
+    transform: rotate(46deg);
+  }
+
+  .left-arrow {
+    transform: rotate(-135deg);
+  }
+}
+
+.controls__item {
+  &:focus {
+    outline: none;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    background: $primary-gradient;
+    border-radius: 10px;
+    padding: 1em;
+    cursor: pointer;
+  }
+}

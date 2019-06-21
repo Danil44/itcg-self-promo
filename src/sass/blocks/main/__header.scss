@@ -1,0 +1,91 @@
+.main__header {
+  background-position-y: -240px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 420px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  margin-bottom: 2.5em;
+  position: relative;
+
+  @media (min-width: $mobile-album) {
+    background-position-y: -565px;
+    background-size: 660px;
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    background-position-y: -620px;
+    background-size: 820px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    background-size: cover;
+    height: 100%;
+    background-position-y: 0;
+    padding-bottom: 9em;
+    background-color: $desktop-backround-color;
+    margin: 0;
+  }
+
+  @media (min-width: $lg-desktop-breakpoint) {
+    padding-bottom: 12em;
+  }
+
+  @media (min-width: $xl-desktop-breakpoint) {
+    padding-bottom: 16em;
+  }
+
+  span {
+    height: 50%;
+  }
+
+  .man-wrapper {
+    position: relative;
+    width: 250px;
+    height: 220px;
+    margin: 0 auto 16em;
+
+    @media (min-width: $mobile-album) {
+      margin: 0 auto 25em;
+    }
+
+    @media (min-width: $tablet-breakpoint) {
+      width: 390px;
+      height: 390px;
+      margin: 0 auto 31em;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      display: none;
+    }
+  }
+
+  .man {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .thief {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.header--orange {
+  background-image: url("/static/images/orange-bg.svg");
+
+  @media (min-width: $desktop-breakpoint) {
+    background-image: url("/static/images/desktop-orange-bg.svg");
+  }
+}
+
+.header--blue {
+  background-image: url("/static/images/blue-bg.svg");
+  @media (min-width: $desktop-breakpoint) {
+    background-image: url("/static/images/desktop-blue-bg.svg");
+  }
+}

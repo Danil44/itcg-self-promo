@@ -1,0 +1,15 @@
+.order-modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 3.5em 0.5em 2em;
+  border-radius: 17px;
+  position: relative;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 4em 0.5em 4em;
+  }
+}

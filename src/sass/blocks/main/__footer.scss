@@ -1,0 +1,18 @@
+.main__footer {
+  background: $primary-gradient;
+  @media (min-width: $desktop-breakpoint) {
+    background: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/static/images/desktop-footer.svg");
+  }
+
+  @media (min-width: 1600px) {
+    padding-top: 4em;
+  }
+
+  @media (min-width: $xl-desktop-breakpoint) {
+    padding-top: 7em;
+  }
+}

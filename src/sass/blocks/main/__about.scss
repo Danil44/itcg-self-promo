@@ -1,0 +1,11 @@
+.main__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3em;
+
+    @media(min-width: $desktop-breakpoint) {
+        display: none;
+    }
+}

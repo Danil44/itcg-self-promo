@@ -1,0 +1,10 @@
+.experts__title {
+  &::after {
+    margin-bottom: 1.2em;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}

@@ -1,0 +1,17 @@
+.cases__subtitle {
+  @include text(
+    $color: $primary-white-color,
+    $font-size: $subtitle-font-size,
+    $font-weight: $subtitle-font-weigth
+  );
+  text-align: center;
+  width: 245px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+
+  @media (min-width: $desktop-breakpoint) {
+    color: $primary-text-color;
+    font-size: calc(11px + 0.5vw);
+  }
+}

@@ -1,0 +1,9 @@
+.cases__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: $desktop-breakpoint) {
+    align-items: baseline;
+  }
+}

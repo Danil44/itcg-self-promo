@@ -1,0 +1,25 @@
+.main__cases {
+  background: $darker-gradient;
+  margin-bottom: 3em;
+  padding-bottom: 5em;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width: $desktop-breakpoint) {
+    border-radius: 10px;
+    background: none;
+    background-image: url("/static/images/desktop-cases-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1680px) {
+    width: 1600px;
+    margin: 0 auto;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}

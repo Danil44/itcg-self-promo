@@ -1,0 +1,67 @@
+$mobile-album: 568px;
+$tablet-breakpoint: 768px;
+$lg-width: 992px;
+$xl-width: 1200px;
+
+$desktop-breakpoint: 1023px;
+
+$lg-desktop-breakpoint: 1440px;
+
+$xl-desktop-breakpoint: 1920px;
+
+$primary-white-color: #ffffff;
+$secondary-white-color: #e6e7e9;
+
+$light-grey-color: #baaf95;
+
+$desktop-backround-color: #f8f8f8;
+
+$primary-title-color: linear-gradient(0deg, #bb3b0d 0%, #e75317 100%),
+  -webkit-linear-gradient(0deg, #bb3b0d 0%, #e75317 100%);
+
+$articles-background: #f8f8f8;
+
+$primary-text-color: #383838;
+$name-color: #e85318;
+
+$primary-gradient: linear-gradient(0deg, #bb3b0d 0%, #e75317 100%),
+  -webkit-linear-gradient(0deg, #bb3b0d 0%, #e75317 100%);
+$darker-gradient: linear-gradient(0deg, #dd4d15 0%, #bb3b0d 100%);
+$secondary-gradient: linear-gradient(0deg, #4783f7 0%, #5bb9f7 100%);
+
+$primary-font-stack: "Rubik", serif;
+
+$sm-font-size: calc(10px + 0.5vw);
+
+$btn-font-size: calc(17px + 1vw);
+$sm-btn-font-size: calc(4px + 1vw);
+$btn-font-weight: 500;
+
+$text-font-size: calc(16px + 0.5vw);
+$desktop-text-font-size: calc(8px + 0.5vw);
+$text-font-weight: 400;
+
+$sm-title-font-size: calc(24px + 1vw);
+
+$title-font-size: calc(30px + 1vw);
+$title-font-weight: 700;
+
+$subtitle-font-size: calc(22px + 0.5vw);
+$subtitle-font-weigth: 500;
+
+$header-desc-fon-size: calc(9px + 0.5vw);
+
+$name-font-size: calc(21px + 1vw);
+$desktop-name-font-size: calc(12px + 1vw);
+
+$name-font-weight: 700;
+
+$article-btn-font-size: calc(14px + 0.5vw);
+$article-text-font-size: calc(12px + 0.5vw);
+
+$socials-font-size: calc(25px + 0.5vw);
+$socials-font-weight: 500;
+
+$navigation-font-size: calc(13px + 0.5vw);
+$footer-font-size: calc(13px + 0.5vw);
+

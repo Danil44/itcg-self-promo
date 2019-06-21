@@ -1,0 +1,10 @@
+.navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 42%;
+
+  @media (min-width: $xl-desktop-breakpoint) {
+    width: 47%;
+  }
+}

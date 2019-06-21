@@ -1,0 +1,7 @@
+.page-articles__all-btn {
+    @include text($color: $primary-white-color, $font-size: $btn-font-size);
+    text-align: center;
+    border: 2px solid $primary-white-color;
+    padding: 1em 3em;
+    border-radius: 49px;
+}

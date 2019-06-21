@@ -1,0 +1,11 @@
+.header__order-btn {
+  display: none;
+  background: $primary-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media (min-width: $desktop-breakpoint) {
+    display: block;
+    font-size: calc(11px + 0.5vw);
+  }
+}

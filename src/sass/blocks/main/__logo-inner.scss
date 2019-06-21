@@ -1,0 +1,11 @@
+.main__logo-inner {
+  top: -20px;
+  right: 0;
+  justify-content: center;
+  @media (min-width: $desktop-breakpoint) {
+    top: 0;
+    justify-content: flex-start;
+    right: unset;
+    left: 0;
+  }
+}

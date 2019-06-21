@@ -1,0 +1,10 @@
+.page-articles__nav-wrapper {
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+}

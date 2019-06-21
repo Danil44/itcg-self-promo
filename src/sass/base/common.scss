@@ -1,0 +1,65 @@
+@import "../helpers/variables.scss";
+
+strong {
+  font-weight: $title-font-weight;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  cursor: default;
+}
+
+.tns-ovh {
+  overflow: visible !important;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.invalid-field {
+  border: 2px solid #d8000c;
+}
+
+input {
+  border: none;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.closed {
+  display: none !important;
+}
+
+.up-show-arrow {
+  &::before {
+    content: "";
+    display: inline-block;
+    top: 39% !important;
+    transform: rotate(-45deg);
+  }
+}
+
+.down-show-arrow {
+  &::before {
+    content: "";
+    display: inline-block;
+    transform: rotate(135deg);
+  }
+}

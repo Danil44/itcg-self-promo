@@ -1,0 +1,8 @@
+.navigation__item {
+  @include text(
+    $color: $primary-white-color,
+    $font-size: $navigation-font-size,
+    $font-weight: 500
+  );
+  cursor: pointer;
+}

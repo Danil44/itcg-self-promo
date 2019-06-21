@@ -1,0 +1,14 @@
+.page-articles__articles-section {
+  padding: 0 0.8em;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 0 1em;
+  }
+
+  @media (min-width: 1366px) {
+    padding: 0 8em;
+  }
+  @media (min-width: $xl-desktop-breakpoint) {
+    padding: 0 16em;
+  }
+}

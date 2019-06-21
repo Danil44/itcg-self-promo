@@ -1,0 +1,15 @@
+.articles__list {
+    margin-bottom: 2em;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+
+    @media(min-width: $desktop-breakpoint) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        align-items: flex-start;
+        margin: 0;
+    }
+}

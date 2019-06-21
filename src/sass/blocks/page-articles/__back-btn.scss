@@ -1,0 +1,35 @@
+.page-articles__back-btn {
+  @include text($color: $primary-white-color, $font-size: $btn-font-size);
+  cursor: pointer;
+  text-align: center;
+  z-index: 2;
+  padding-top: 1em;
+  padding-left: 1em;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' width='100%25'%3E%3Cdefs%3E%3CclipPath clipPathUnits='userSpaceOnUse' id='cp1'%3E%3Cpath d='M1 0L20 0L20 19L1 19Z' /%3E%3C/clipPath%3E%3C/defs%3E%3Cstyle%3E tspan %7B white-space:pre %7D .shp0 %7B fill: %23ffffff %7D %3C/style%3E%3Cg id='Page 1 copy' clip-path='url(%23cp1)'%3E%3Cpath id='Path 1 copy' class='shp0' d='M19.8,1.44c0,0 0,0 0,-0.01c-0.02,-0.05 -0.03,-0.1 -0.05,-0.15c0,0 0,-0.01 0,-0.02c-0.02,-0.05 -0.04,-0.1 -0.07,-0.14c0,-0.01 -0.01,-0.01 -0.01,-0.02c-0.03,-0.05 -0.05,-0.1 -0.09,-0.15c0,0 0,0 0,-0.01c-0.14,-0.21 -0.31,-0.39 -0.52,-0.52c0,0 0,0 -0.01,0c-0.05,-0.03 -0.1,-0.06 -0.15,-0.09c-0.01,0 -0.01,-0.01 -0.02,-0.01c-0.05,-0.03 -0.09,-0.05 -0.14,-0.07c-0.01,0 -0.01,0 -0.02,-0.01c-0.05,-0.02 -0.1,-0.04 -0.15,-0.05c0,0 -0.01,0 -0.01,0c-0.05,-0.01 -0.1,-0.03 -0.16,-0.04h0c-0.11,-0.02 -0.23,-0.03 -0.35,-0.03h-15.21c-1.01,0 -1.84,0.82 -1.84,1.84c0,1.01 0.82,1.84 1.84,1.84h10.78l-7.63,7.62c-0.71,0.72 -0.71,1.88 0,2.59c0.36,0.36 0.83,0.54 1.3,0.54c0.47,0 0.94,-0.18 1.3,-0.54l7.62,-7.62v10.78c0,1.01 0.82,1.83 1.83,1.83c1.01,0 1.84,-0.82 1.84,-1.83v-15.21c0,-0.18 -0.03,-0.35 -0.08,-0.52z' /%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 58%;
+    right: 90%;
+    transform: rotate(-135deg);
+  }
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $sm-btn-font-size;
+    padding-left: 1.5em;
+    &::before {
+      right: 90%;
+      width: 13px;
+      height: 13px;
+    }
+    @media (min-width: $lg-desktop-breakpoint) {
+      &::before {
+        top: 63%;
+      }
+    }
+  }
+}

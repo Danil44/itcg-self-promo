@@ -1,0 +1,14 @@
+.main__logo-wrapper {
+  width: 320px;
+  margin: 0 auto 7em;
+  justify-content: center;
+  
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: column;
+    width: 485px;
+    margin: 0 0 2em;
+  }
+  @media (min-width: $lg-desktop-breakpoint) {
+    width: 530px;
+  }
+}

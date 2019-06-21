@@ -1,0 +1,20 @@
+.main__logo-icon {
+  width: 34px;
+  height: 34px;
+  right: 17%;
+  top: 19%;
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 125px;
+    height: 125px;
+    right: -17%;
+    top: 6%;
+  }
+
+  @media (min-width: $xl-desktop-breakpoint) {
+    width: 170px;
+    height: 170px;
+    right: -60%;
+    top: -7%;
+  }
+}

@@ -1,0 +1,11 @@
+.page-articles__back-btn-wrapper {
+  position: relative;
+  margin: 0 auto 4em;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0 auto 4em 0;
+  }
+}

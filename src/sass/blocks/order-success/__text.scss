@@ -1,0 +1,8 @@
+.order-success__text {
+  @include text($font-size: $sm-title-font-size, $font-weight: 700);
+  background: $primary-title-color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 65px;
+}

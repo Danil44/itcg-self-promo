@@ -1,0 +1,5 @@
+.main {
+  @media (min-width: $desktop-breakpoint) {
+    background-color: $desktop-backround-color;
+  }
+}

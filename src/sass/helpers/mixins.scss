@@ -1,0 +1,11 @@
+@mixin text(
+  $color: $primary-text-color,
+  $font-family: $primary-font-stack,
+  $font-size: "",
+  $font-weight: 400
+) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}

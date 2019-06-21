@@ -1,0 +1,38 @@
+.cases__title {
+  @include text(
+    $color: $primary-white-color,
+    $font-size: $title-font-size,
+    $font-weight: 300
+  );
+  text-align: center;
+  padding-top: 1.3em;
+  cursor: pointer;
+  user-select: none;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 0.5em auto 3em auto;
+    width: 6em;
+    height: 2px;
+    background-color: $primary-white-color;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 1em;
+    text-align: left;
+    color: $primary-text-color;
+    background: $primary-title-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &::after {
+      border-radius: 10px;
+      width: 65px;
+      height: 8px;
+      background: $primary-title-color;
+      margin: 0.5em auto 0 0;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.order-modal__input {
+  @include text(
+    $color: $primary-text-color,
+    $font-size: $desktop-text-font-size
+  );
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em 2em;
+  border-radius: 32px;
+  background-color: $secondary-white-color;
+  box-shadow: inset 0px 0px 15px -8px rgba(0, 0, 0, 0.29);
+
+  &:first-child {
+    margin-top: 3em;
+  }
+
+  &:nth-child(11) {
+    padding-bottom: 5em;
+
+    @media (min-width: $desktop-breakpoint) {
+      margin-bottom: 3em;
+    }
+  }
+  @media (min-width: $desktop-breakpoint) {
+    width: 350px;
+  }
+}
+
+.order-modal__input::placeholder {
+  @include text(
+    $color: $primary-text-color,
+    $font-size: $desktop-text-font-size
+  );
+}
+
+textarea {
+  border: none;
+  resize: none;
+
+  &:focus {
+    outline: none;
+  }
+}

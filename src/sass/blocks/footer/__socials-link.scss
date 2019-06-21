@@ -1,0 +1,14 @@
+.footer__socials-link {
+  &::before {
+    width: 30px;
+    height: 30px;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $footer-font-size;
+
+    &::before {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

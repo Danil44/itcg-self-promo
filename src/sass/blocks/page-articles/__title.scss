@@ -1,0 +1,15 @@
+.page-articles__title {
+  @include text(
+    $color: $primary-white-color,
+    $font-size: $sm-title-font-size,
+    $font-weight: $subtitle-font-weigth
+  );
+  text-align: center;
+  padding: 0px 0 4em;
+
+  @media (min-width: $desktop-breakpoint) {
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: $title-font-size;
+  }
+}
