@@ -51,7 +51,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify-es": "^1.0.4",
     "handlebars": "^4.1.0",
